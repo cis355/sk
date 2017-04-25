@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-kennel-gspread",
+  "private_key_id": "ac720d1668b18cabe399ecc8e835fe63183a8269",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKwJxiedlhOfXk\nL1xjxMXA1BQs/hbtmmruilxmltgvb1QbRmK/s6fxG8hJuVseNzY42+SIo3x8NIo6\nWgjjna8DSz12BTtUwLntR0IcdJC1Q8KJGRRTTs2Cg2BXQxfLjpEDA57FhJhiYBEg\nn+rgZz4wCKwqiiQxJrESOCLZgxsNHHSAKIHmbuIgS2P5V7lcLZxewXfGw3nuy4ab\nuvDJuG6aU/jbZaKJTqvAEvLZ0k7DU1sK2cDtq510mxaMKojuHJxmpIB3eWLYzug4\nr5AWyufZw2RjKcPn/Mz7Uud9hwcW/goP520QtjWTnM7I3pCxSOS7HPMzm103HVBM\nJ65kq3OFAgMBAAECggEBAIgtylvSH5FQDrnOna1dEr2rNEnr95ZrKvtA70Lweg+S\nJNmU8upzTo+A64uo9WxcBQ03lE26EPiTiWwb4PCQjmYV+Rf19527PKYEQIFAQZme\nA2F1+NLjkODiQKkbpTXRcdCmc9OSdY9NmvNgta83aOt2R7ziv+BLbo8gKTgS+O5a\nRkPlWyQ67mqFprgor/tU7fzkcm/qHGLLgcmRVllCN9GqcwkPDM98TsOcUaVIb4WD\nKYWP/aBuhCIrpp1Z1UJIQo1nX+3daLjC/OxV4IKVsc/u0M32HYElnVPT6Byt/SPF\ndEfgY981A/MZNUCBaIoLdAqoHfuhrJMYWbeiDSrZb5kCgYEA6DxA5yRnztqmKvsb\nMVCWkfMnr/1dxWxZ4jZTRX3p0H4mE9fwsXmEBh/7ZgpXVRD50OQIFgWF5tSMTk80\nhWHGiOAWpapDuyY7u4iPRiM4D+qBdhRUJYV5rsNe+JagBglvNCVHHEPqkcVqVbSj\n6t2W7R4XXZmutYWQiIP11d46cLcCgYEA34AB5cXFyIfRNMWeA90U4BgMYP8BERSJ\nmZKNZBKEpV5ubDLpyyO4vpZWoe+PU3VEqqJuUK2R2WBgPtEHWmCgoUgsm1IawmcZ\nXscSFO6SIbRUA4T8YNil2+AItSXLOpiNW6wXQBB/dS9xOTMtTNwmwnrEDFaRW32N\nH+c0ttK6yaMCgYEAjKJIT3ENaAeiju6nZfK+a73K79lH2tElkUaCoNeCKx7pYiTn\nfiHvIGJntEBY6IuyLJyahPNtRf66xIVUcd1nA+Zn8ISuJXweug8VbEzRm1nQcjgX\nSO2OZZWsQm+8kktOS06zxFsghov9O897YDQ2PHt3fNgfI4+xmeoHii7cRvsCgYEA\nhCtK8/p08BWBXlfPDjHbeno+N84Vb2hZxvunqZpZ3wFtA4dIQt0pD2wQZ0sn0w7y\nQIY1/nfmXEpmID+0vXmPBFGOL3vqXzRhCG9o/f/nYw8k77/hD9SOoOxnudhTyp8U\nWTX3uecHuOEJb+4Xx/AY68F11mYLJ7OjlU5BGiycUUkCgYBzYLHNq5KEnnfBq6xF\nHc+kzqpaLTYdej07co85xcNmg9gic8/qX7Kt0BBO1egZ/rBWwQxg06sEar3AFLTq\n+IM20D3b5fyjwn3gCXmeyFnsvOWx1jNmQygdUUUspXevhO5mksF20GPVCKKqKyDk\n4MrrKb47ZCixhCgHCSZsUDfz4A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gspread@smart-kennel-gspread.iam.gserviceaccount.com",
+  "client_id": "115340845367341838611",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gspread%40smart-kennel-gspread.iam.gserviceaccount.com"
+}

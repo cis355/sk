@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>	  
+	<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script>
+		var URL = "https://csis.svsu.edu/~gpcorser/jakniepe/toggleLED.php?led=";
+		
+        $(document).ready( function() {
+			$.ajax({
+				url: "https://csis.svsu.edu/~gpcorser/jakniepe/initializeLED.php"
+			});
+			
+            $("#led1_btn").click( function() {
+				$.ajax({ url: URL + "1" });
+				$("#led1_on").toggleClass("hidden");
+				$("#led1_off").toggleClass("hidden");
+            });
+			
+			$("#led2_btn").click( function() {
+                $.ajax({ url: URL + "2" });
+				$("#led2_on").toggleClass("hidden");
+				$("#led2_off").toggleClass("hidden");
+            });
+			
+			$("#led3_btn").click( function() {
+                $.ajax({ url: URL + "3" });
+				$("#led3_on").toggleClass("hidden");
+				$("#led3_off").toggleClass("hidden");
+            });
+        });
+    </script>
+	<style>
+		.hidden {
+			display: none !important;
+		}
+	</style>
+</head>
+
+<body>
+    <button id="led1_btn" class="ui-btn">LED1</button>
+	<div id="led1_on" style="display:inline;" class="hidden">ON</div>
+	<div id="led1_off" style="display:inline">OFF</div>
+	<br /><br />
+	<button id="led2_btn" class="ui-btn">LED2</button>
+	<div id="led2_on" style="display:inline" class="hidden">ON</div>
+	<div id="led2_off" style="display:inline">OFF</div>
+	<br /><br />
+	<button id="led3_btn" class="ui-btn">LED3</button>
+	<div id="led3_on" style="display:inline" class="hidden">ON</div>
+	<div id="led3_off" style="display:inline">OFF</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        // Location of TEXT Files
+        var URL = "http://www.cis355.com/alpero/jakniepe/";
+		var toggleURL = URL + "toggle.php?file=";        
+		
+        // On Document Ready
+        $(document).ready( function() {
+            // INITIALIZE
+            $.ajax({ 
+                url: URL + "light.txt",
+                success: function(data) {
+                    if(data == 0) {
+                        $("#light_on").toggleClass("hidden");
+                        $("#light_off").toggleClass("hidden");
+                    }
+                }
+            });
+            $.ajax({ 
+                url: URL + "gate.txt",
+                success: function(data) {
+                    if(data == 0) {
+                        $("#gate_open").toggleClass("hidden");
+                        $("#gate_closed").toggleClass("hidden");
+                    }
+                }
+            });
+            
+            // BUTTONS
+            $("#light_btn").click( function() {
+				$.ajax({ url: toggleURL + "light" });
+				$("#light_on").toggleClass("hidden");
+				$("#light_off").toggleClass("hidden");
+            });
+			$("#gate_btn").click( function() {
+                $.ajax({ url: toggleURL + "gate" });
+				$("#gate_open").toggleClass("hidden");
+				$("#gate_closed").toggleClass("hidden");
+            });
+			$("#treat_btn").click( function() {
+                $.ajax({ url: toggleURL + "treat" });
+            });
+			$("#webcam_btn").click( function() {
+                window.location.href = "http://www.google.com";
+            });
+            
+            // LOAD FILES
+            $('#water_span').load(URL + "water.txt");
+            $('#food_span').load(URL + "food.txt");
+            $('#temperature_span').load(URL + "temperature.txt");
+            $('#poop_span').load(URL + "poop.txt");
+            $('#peepad_span').load(URL + "peepad.txt");
+        });
+    </script>
+	<style>
+		.hidden {
+			display: none !important;
+		}
+        .ui-block { 
+            vertical-align: middle;
+            display: inline-block; 
+        }
+        label {
+            font-weight: bold !important;
+            display: inline !important;
+        }
+        span {
+            display: inline !important;
+        }
+	</style>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="main" class="ui-content">
+            <h1>Smart Kennel</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <button id="light_btn" class="ui-btn">LIGHT</button>
+                </div>
+                <div class="ui-block-b" data-vertical-centred>
+                    <div style="margin-left: 15px; margin-top: 20px;">
+                        <span id="light_on" class="hidden">ON</span>
+                        <span id="light_off">OFF</span>
+                    </div>
+                </div>
+                <div class="ui-block-a">
+                    <button id="gate_btn" class="ui-btn">GATE</button>
+                </div>
+                <div class="ui-block-b">
+                    <div style="margin-left: 15px; margin-top: 20px;">
+                        <span id="gate_open" class="hidden">OPEN</span>
+                        <span id="gate_closed">CLOSED</span>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div style="margin-bottom: 5px;">
+                <label>WATER: </label>
+                <span id="water_span"></span>
+            </div>
+            <div>
+                <label>FOOD: </label>
+                <span id="food_span"></span>
+            </div>
+            <br />
+            <div style="margin-bottom: 5px;">
+                <label>TEMPERATURE: </label>
+                <span id="temperature_span"></span>
+            </div>
+            <div style="margin-bottom: 5px;">
+                <label id="poop_btn">POOP:</label>
+                <span id="poop_span"></span>
+            </div>
+            <div>
+                <label id="peepad_btn">PEE PAD:</label>
+                <span id="peepad_span"></span>
+            </div>
+            <br />
+            <button id="treat_btn" class="ui-btn">DISPENSE TREAT</button>
+            <button id="webcam_btn" class="ui-btn">WEBCAM</button>
+        </div>
+    </div>
+</body>
+</html>

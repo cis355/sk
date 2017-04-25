@@ -1,0 +1,1 @@
+<?php file_put_contents($_GET['file'].".txt",((file_get_contents($_GET['file'].".txt")+1)%2)); ?>
